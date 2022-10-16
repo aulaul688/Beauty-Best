@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--變成響應式網頁-->
+    <title>Beauty&Best</title>
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/frontPage.css" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+    <div class="logo">
+        <img src="img/logo.jpg" height="50px" />
+        <p><b>BEAUTY&BEST</b></p>
+    </div>
+    <ul class="navBar">
+        <li class="navItem"><a class="nava" href="index.html">Home</a></li>
+        <li class="navItem">
+            <a class="nava" href="makeup.html">妝容</a>
+            <ul class="subnav">
+                <li><a class="nava" href="makeup.html">Face</a></li>
+                <li><a class="nava" href="makeup.html">Eye</a></li>
+                <li><a class="nava" href="makeup.html">Nose</a></li>
+                <li><a class="nava" href="makeup.html">Lip</a></li>
+            </ul>
+        </li>
+        <li class="navItem"><a class="nava" href="dress.html">穿搭</a>
+            <ul class="subnav">
+                <li><a class="nava" href="dress.html">沙漏型</a></li>
+                <li><a class="nava" href="dress.html">直筒形</a></li>
+                <li><a class="nava" href="dress.html">倒三角形</a></li>
+                <li><a class="nava" href="dress.html">A型</a></li>
+                <li><a class="nava" href="dress.html">蘋果型</a></li>
+            </ul>
+        </li>
+        <li class="navItem"><a class="nava" href="facedetect.html">辨識</a></li>
+        <li class="navItem"><a class="nava" href="index.html">Contact</a></li>
+        <li class="navItem"><a class="nava" href="index.html">About</a></li>
+        <li class="navItem">
+            <a class="nava" href="index.html">Else</a>
+        </li>
+    </ul>
+    </div>
+
+    <div class="white-header"></div><!--最上方白色空白表頭-->
+
+    <div class="video">
+        <video class="makeup-video" src="img/dress.mp4" autoplay="autoplay" loop="true"  muted></video>
+    </div> 
+
+    <div class="main">
+        <div class="left">
+            <a href="#"><button class="btn">穿搭</button></a>
+            <a href="#"><button class="btn">沙漏型</button></a>
+            <a href="#"><button class="btn">直筒形</button></a>
+            <a href="#"><button class="btn">倒三角形</button></a>
+            <a href="#"><button class="btn">蘋果型</button></a>
+            <a href="#"><button class="btn">梨型</button></a>
+        </div>
+        <div class="right">
+            <div class="artical artical-face">
+                <img src="img/logo.jpg" height="100px">
+                <p class="text">某些文字某些文字某些文字某些文字某些文字某些文字某些文字某些文字某些文字某些文字某些文字某些文字某些文字某些文字某些文字某些文字某些文字某些文字某些文字某些文字某些文字某些文字某些文字</p>
+            </div>
+            <div class="artical artical-eye">
+                <img src="img/logo.jpg" height="100px">
+                <p class="text">某些文字</p>
+            </div>
+            <div class="artical artical-nose">
+                <img src="img/logo.jpg" height="100px">
+                <p class="text">某些文字</p>
+            </div>
+            <div class="artical artical-lip">
+                <img src="img/logo.jpg" height="100px">
+                <p class="text">某些文字</p>
+            </div>
+        </div>
+    </div>
+    <!--輪播-->
+    <div class="focus">
+        <a href="javascript:;" class="prev">&lt;</a>
+        <a href="javascript:;" class="next">&gt;</a>
+        <!--核心滾動區域-->
+        <ul >
+            <li><img src="img/change1.png"></li>
+            <li><img src="img/change2.png"></li>
+            <li><img src="img/change3.png"></li>
+        </ul>
+        <!--下面圈圈-->
+        <ol class="slide-index">
+            
+        </ol>
+    </div>
+    <!--底部-->
+    <div class="footer">
+        <h1>BEAUTY & BEST</h1>
+        <p>@2022 Beauty&Best 版權所有</p>
+    </div>
+</body>
+<script src="js/animate.js"></script>
+<script src="js/changeIMG.js"></script>
