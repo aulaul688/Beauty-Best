@@ -6,23 +6,105 @@
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils/control_utils.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_mesh/face_mesh.js" crossorigin="anonymous"></script>
-  
-  <link rel="stylesheet" href="CSS/face.css">
+  <link rel="stylesheet" href="Css/navbar.css">
+  <link href="css/footer.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="CSS/facemash.css">
 </head>
 
 <body>
-  <div class="container" >
-    <button id="btn2" width="200" height="200">開始辨識</button>
-    <video class="input_video" width="1280px" height="720px"></video>
+  <div class="header">
+    <div class="logo">
+        <img src="img/logo.png" height="50px" />
+        <p>BEAUTY&BEST</p>
+    </div>
+    <ul class="navBar">
+        <li class="navItem"><a class="nava" href="index.html">主頁</a></li>
+        <li class="navItem">
+            <a class="nava" href="makeup.html">妝容</a>
+            <ul class="subnav">
+                <li><a class="nava" href="face.html">臉型</a></li>
+                <li><a class="nava" href="eyes.html">眼型</a></li>
+                <li><a class="nava" href="nose.html">鼻形</a></li>
+                <li><a class="nava" href="lips.html">唇型</a></li>
+            </ul>
+        </li>
+        <li class="navItem"><a class="nava" href="dress.html">穿搭</a>
+            <ul class="subnav">
+                <li><a class="nava" href="s.html">沙漏型</a></li>
+                <li><a class="nava" href="h.html">直筒形</a></li>
+                <li><a class="nava" href="x.html">倒三角形</a></li>
+                <li><a class="nava" href="a.html">梨型</a></li>
+                <li><a class="nava" href="o.html">蘋果型</a></li>
+            </ul>
+        </li>
+        <li class="navItem"><a class="nava" href="facedetect.html">辨識</a></li>
+        <li class="navItem "><a class="nava" href="javascript:;">其他</a>
+            <ul class="subnav">
+                <li><a class="nava " href="history.html">歷史紀錄</a></li>
+                <li><a class="nava" href="set.html">設定</a></li>
+            </ul>
+        </li>
+        <li class="navItem"><a class="nava" href="shop.html">商店</a></li>
+    </ul>
+</div>
+  <div class="white-header"></div><!--最上方白色空白表頭-->  
+  <div class="photo" >
+    <video class="input_video"></video>
     <canvas class="output_canvas" width="1280px" height="720px"></canvas>
-    
+    <button>START</button>  
   </div>
   <div>
-    <p id="face"></p>
-    <p id="mouth"></p>
-    <p id="nose"></p>
-    <p id="lips"></p>
+    <img class="ad" src="img/facemesh/ad.png">
   </div>
-</body>
+  <div class="result">
+    <div class="result_item"> 
+      <img class="fimg" src="img/logo.jpg"/>
+      <p class="fp">菱形臉</p>
+    </div>
+    <div class="result_item"> 
+      <img class="elimg" src="img/logo.jpg"/>
+      <p class="elp">左桃花眼</p>
+    </div>
+    <div class="result_item"> 
+      <img class="erimg" src="img/logo.jpg"/>
+      <p class="erp">右桃花眼</p>
+    </div>
+    <div class="result_item"> 
+      <img class="nimg1" src="img/logo.jpg"/>
+      <p class="np1">寬鼻</p>
+    </div>
+    <div class="result_item"> 
+      <img class="nimg2" src="img/logo.jpg"/>
+      <p class="np2">長鼻</p>
+    </div>
+    <div class="result_item"> 
+      <img class="mimg" src="img/logo.jpg"/>
+      <p class="mp">標準唇</p>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="left">
+      <img src="img/name.png"/>
+  </div>
+  <img class="bt1" src="img/index/bt.png"/>
+  <div class="middle">
+      <div><p>Get in Touch</p></div>
+      <div>
+          <p>雲林縣斗六市大學路123號</p>
+          <p>0985567610</p>
+      </div>
+  </div>
+  <img class="bt2" src="img/index/bt.png"/>
+  <div class="right">
+      <a href="fb.com"><img src="img/index/fb.png"></a>
+      <a href="ig.com"><img src="img/index/ig.png"></a>
+      <a href="mailto:aulaul688@gmail.com"><img src="img/index/mail.png"></a>
+      <a href="twitter.com"><img src="img/index/twitter.png"></a>
+  </div>
+  <p class="cc">@2022 Beauty&Best 版權所有</p>
+</div>
+
+
+  </body>
 </html>
-<script src="JS/face.js"></script>
+<script src="JS/facemesh.js"></script>

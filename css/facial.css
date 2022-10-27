@@ -1,0 +1,165 @@
+body{
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+ul{margin: 0;padding: 0;}
+
+.type{
+    position: relative;
+}
+.type button{
+    width: 125px;
+    height: 125px;
+    background-color: rgba(34, 8, 8, 0.815);
+    color: white;
+    float: left;
+    margin-top: 200px;
+    padding: 20px;
+    margin-left: 75px; 
+    border-radius: 25px;
+}
+.type button:hover{
+    background-color: white ;
+    color: rgba(34, 8, 8, 0.815);
+}
+.one_type{
+    display: none;
+}
+.ad{
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 500px;
+    background-color: rgb(237, 160, 170);
+}
+.middle_ad{
+    position: absolute;
+    width: 700px;
+    height: 300px;
+    left: 50%;
+    margin-left: -300px;
+    top: 50%;
+    margin-top: -150px;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 400px;
+    background: url(../img/describe.png);
+    background-size: cover;
+    color: white;
+    position: relative;
+    top: 500px;
+
+}
+.main img{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    margin-top: -150px;
+    left: 100px;
+}
+.title{
+    position: absolute;
+    top:40px;
+    left: 400px;
+    font-size: 35px;
+}
+.choose{
+    width: 100%;
+    position: relative;
+    top: 530px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.choose button{
+    width: 20%;
+    height: 50px;
+    font-size: 20px;
+    background-color: white;
+    border: 2px black solid;
+    margin-left: 5%;
+}
+.choose button:hover{
+    background-color: black;
+    color: white;
+}
+.step{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 500px;
+    background: url(../img/step.png);
+    background-size: cover;
+}
+
+.step div{
+    position: absolute;
+    width: 60%;
+    left: 30%;
+    top: 15%;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.step div:nth-child(1){
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    font-size: 50px;
+}
+.step div:nth-child(1)>p{
+    font-size: 50px;
+}
+.step div:nth-child(1)>img{
+ width: 200px;
+}
+.step {
+    display: none;
+}
+.other{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    position: relative;
+    top: 500px;
+}
+.otherword{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.pic div{
+    width: 25%;
+    float: left;
+    position: relative;
+    margin-left: 6.5%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #EDEBEB;
+}
+
+.pic img{
+    width: 50%;
+    margin-left: 25%;
+}
+.pic div:hover{
+    box-shadow: 10px 5px 5px 5px gray;
+}
+.footer{
+    top: 550px;
+}

@@ -1,0 +1,211 @@
+/*妝容&穿搭首頁*/
+body{
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+ul{margin: 0;padding: 0;}
+
+.type{
+    width: 100%;
+    height: 1200px;
+    background-color: white;
+    position: relative;
+    top: 500px;
+}
+.type>p{
+    margin: 20px auto;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 900;
+}
+.type .gray{
+    background-color: #EDEBEB;
+    width: 90%;
+    height: 700px;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.type_item{
+    background-color: aquamarine;
+    height:15%;
+    width: 70%;
+    margin: 2% auto;
+    border: 5px black;
+    
+}
+.icon{
+    height: 17%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top:75% ;
+}
+.icon div{
+    width: 15%;
+    height: 100%;
+    background-color: white;
+    border-radius: 10%;
+    box-shadow:-5px 5px 15px 3px gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left :3% ;
+}
+.icon div:nth-child(1){
+    margin-left: 0%;
+}
+.icon img{
+    width: 90%;
+    height: 90%;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 700px;
+    background-color: white;
+    position: relative;
+    top: 500px;
+    left: 0;
+    right: 0;
+}
+
+/*按鈕區*/
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.left a{
+    text-decoration: none;
+    margin-top:30px ;
+}
+.left .btn{
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    border: 0;
+    box-shadow: 5px 5px 10px  gray;
+    font-size: 14px;
+    color: black;
+}
+
+.left .btn:hover{
+    background-color: #C0D9F8;
+    color: white;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+}
+
+.artical{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    height: 100px;
+}
+
+.artical .text{
+    margin-left: 50px;
+    width: 500px;
+    font-size: 20px;
+}
+
+
+.focus{
+    width: 1525px;
+    height: 500px;
+    position: relative;
+    top: 500px;
+    overflow: hidden;
+}
+
+.focus a{
+    width: 30px;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.133);
+    position: absolute;
+    /*絕對定位盒子居中*/
+    top: 50%;
+    margin-top: -15px;
+    text-align: center;
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+}
+
+.focus ul{/*讓ul可以包含住所有圖片*/
+    width: 400%;/*變寬讓li浮起來*/
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.focus li{/*變一排*/
+    float: left;
+}
+
+.focus img{
+    width: 1525px;
+    height: 500px;
+}
+.prev{
+    display: none;
+    position: absolute;
+    left: 0;
+    z-index: 9;
+}
+.next{
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 9;
+}
+
+.slide-index{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -35px;
+    width: 70px;
+    height: 13px;
+    background-color: rgba(255, 255, 255, 0.501);
+    color: white;
+    border-radius: 7px;
+    padding: 0;
+}
+
+.slide-index li{
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    float: left;
+    border-radius: 4px;
+    margin: 3px 7px;
+}
+
+.slide-index .select{
+    background-color: black;
+}
+
+.footer{
+    top: 500px;
+}
+
+.footer .left img{
+    width: 100%;
+    margin: 0;
+}

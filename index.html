@@ -1,12 +1,112 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--變成響應式網頁-->
     <title>Beauty&Best</title>
-    <link href="bootstrap/css/bootstrap-grid.min.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet"/>
+    <link href="css/footer.css" rel="stylesheet"/>
+    <link href="css/video.css" rel="stylesheet"/>
+    <link href="css/index.css" rel="stylesheet"/>
 </head>
 <body>
-    <button><a href="makeup.html">妝容</a></button>
+    <div class="header">
+        <div class="logo">
+            <img src="img/logo.png" height="50px" />
+            <p>BEAUTY&BEST</p>
+        </div>
+        <ul class="navBar">
+            <li class="navItem"><a class="nava" href="index.html">主頁</a></li>
+            <li class="navItem">
+                <a class="nava" href="makeup.html">妝容</a>
+                <ul class="subnav">
+                    <li><a class="nava" href="face.html">臉型</a></li>
+                    <li><a class="nava" href="eyes.html">眼型</a></li>
+                    <li><a class="nava" href="nose.html">鼻形</a></li>
+                    <li><a class="nava" href="lips.html">唇型</a></li>
+                </ul>
+            </li>
+            <li class="navItem"><a class="nava" href="dress.html">穿搭</a>
+                <ul class="subnav">
+                    <li><a class="nava" href="s.html">沙漏型</a></li>
+                    <li><a class="nava" href="h.html">直筒形</a></li>
+                    <li><a class="nava" href="x.html">倒三角形</a></li>
+                    <li><a class="nava" href="a.html">梨型</a></li>
+                    <li><a class="nava" href="o.html">蘋果型</a></li>
+                </ul>
+            </li>
+            <li class="navItem"><a class="nava" href="facedetect.html">辨識</a></li>
+            <li class="navItem "><a class="nava" href="javascript:;">其他</a>
+                <ul class="subnav">
+                    <li><a class="nava " href="history.html">歷史紀錄</a></li>
+                    <li><a class="nava" href="set.html">設定</a></li>
+                </ul>
+            </li>
+            <li class="navItem"><a class="nava" href="shop.html">商店</a></li>
+        </ul>
+    </div>
+    <!--cover-->
+    <div class="video">
+        <img class="makeup-video" src="img/index/cover.png" >
+    </div> 
+    <div class="white-header"></div><!--最上方白色空白表頭-->
+    <!--About-->
+    <div class="about">
+        <img src="img/index/about.png"/>
+        <div></div>
+    </div>
+    <!--登入-->
+    <div class="login">
+        <div class="left">
+            <p>START</p>  
+            <img src="img/index/br.png" />          
+            <p>Enter your details to get sign in your account.</p>
+        </div>
+        <div class="right">
+            <form>
+                <label for="FN">First Name</label>
+                <input type="text" id="FN" >
+                <label for="LN">Last Name</label>
+                <input type="text" id="LN">
+                <label for="mail">Email*</label>
+                <input type="email" id="mail" required>
+            </form>
+            <button><a href="#">Sign up</a></button>
+        </div>
+    </div>
+    <div class="quote">
+        <img src="img/index/quote.png"/>
+        <p>Everything has beauty, but not everyone sees it.</p>
+        <p>Confucius</p>
+    </div>
+    <div class="resource">
+        <div class="left">
+            <img src="img/index/res.png"/>
+            <img src="img/index/resour.png"/>
+        </div>
+        <div class="right">
+        </div>
+    </div>
+
+    </div>
+    <div class="footer">
+        <div class="left">
+            <img src="img/name.png"/>
+        </div>
+        <img class="bt1" src="img/index/bt.png"/>
+        <div class="middle">
+            <div><p>Get in Touch</p></div>
+            <div>
+                <p>雲林縣斗六市大學路123號</p>
+                <p>0985567610</p>
+            </div>
+        </div>
+        <img class="bt2" src="img/index/bt.png"/>
+        <div class="right">
+            <a href="fb.com"><img src="img/index/fb.png"></a>
+            <a href="ig.com"><img src="img/index/ig.png"></a>
+            <a href="mailto:aulaul688@gmail.com"><img src="img/index/mail.png"></a>
+            <a href="twitter.com"><img src="img/index/twitter.png"></a>
+        </div>
+        <p class="cc">@2022 Beauty&Best 版權所有</p>
+    </div>
+   
 </body>
-<script src="js/index.js"></script>

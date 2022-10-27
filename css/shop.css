@@ -1,0 +1,29 @@
+.white-header{
+    position: relative;
+    background-color: white;
+    height: 100px;
+    width: 100%px;
+}
+.main{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto;
+}
+.item{
+    width: 20%;
+    margin-left: 4%;
+    height: 200px;
+}
+.item img{
+    width: 100%;
+}
+.item img:hover{
+    box-shadow: 5px 5px 5px gray;
+}
+.text{
+    margin-top: 10px;
+}
+.text p{
+    margin-top: 0;
+}

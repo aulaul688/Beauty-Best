@@ -1,0 +1,17 @@
+.video{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: -30px;
+}
+.makeup-video{
+    width: 100% ;
+    margin: 0 auto;
+}
+
+.white-header{
+    position: relative;
+    background-color: white;
+    height: 100px;
+    width: 100%px;
+}

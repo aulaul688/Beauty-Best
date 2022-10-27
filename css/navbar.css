@@ -1,7 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+ul{margin: 0;padding: 0;}
 .header{
     display: flex;
     height: 50px;
-    width: 1280px;
+    width: 100%;
     position: fixed;
     top: 0;
     left: 0;
@@ -11,30 +20,33 @@
     display: flex;
     float: left;
     position: absolute;
-    left: 50px;
-    top: 20px;
+    left: 5%;
+    top: 40%;
     align-items: center;
-    text-shadow: 1px 1px 2px rgb(255, 255, 255);
 }
 .logo p{/*名字*/
     font-size: 20px;
     margin: 0;
     padding: 10px;
-    
+    color: black;
+    font-weight: 900;
+    -webkit-text-stroke: 0.2px white;
 }
 .navBar{
     display: flex;
     flex-direction: row;
-    height: 60px;
+    height: 50px;
+    width: 500px;
     position: absolute;
-    left: 800px;
-    top: 20px;
+    left: 60%;
+    top: 40%;
     box-shadow: 5px 5px 5px 5px gray ;
     background-image: url("../img/bar.jpg");
     background-repeat: no-repeat;
-    justify-content: center;
     align-items: center;
+    border-radius: 5px;
 }
+
 
 .navItem{/*第一行*/
     list-style: none;
@@ -45,6 +57,7 @@
     justify-content: center;
     align-items: center;
 }
+
 .nava{
     display: block;
     font-size: 25px;
@@ -60,28 +73,25 @@
 .subnav{/*第二ul*/
     display: none;
     background-color: #C0D9F8;
-    margin-top: 9px;
+    margin-top: 0px;
     overflow: hidden;
     position: absolute;/*別跑版*/
     padding: 0 4px;
-    
+    flex-direction: column;
+    margin-left: 15px;
 }
 
 .navItem:hover .subnav{
-    display: block;
+    display: flex;
 }
 
 .subnav li{
     display: flex;
     list-style: none;
-    padding: 5px 10px;
+    padding: 5px 0px;
+
 }
 .subnav .nava:hover{
     box-shadow: 2px 2px 2px gray;
 }
 
-.white-header{
-    background-color: white;
-    height: 100px;
-    width: 1280px;
-}
