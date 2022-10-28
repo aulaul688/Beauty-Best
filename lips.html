@@ -5,6 +5,7 @@
     <link href="css/footer.css" rel="stylesheet"/>
     <link href="css/video.css" rel="stylesheet"/>
     <link href="css/facial.css" rel="stylesheet"/>
+    <link href="css/lip.css" rel="stylesheet"/>
     <title>Beauty&Best</title>
 </head>
 <body>
@@ -50,30 +51,92 @@
     <div class="white-header"></div><!--最上方白色空白表頭-->
     <!--影片上類型按鈕-->
     <div class="type">
-        <button>花瓣唇</button>
-        <button>葉形唇</button>
-        <button>M形唇</button>
-        <button>厚唇</button>
-        <button>標準唇</button>
-        <button>薄唇</button>
+        <button class="type_btn">花瓣唇</button>
+        <button class="type_btn">葉形唇</button>
+        <button class="type_btn">M形唇</button>
+        <button class="type_btn">厚唇</button>
+        <button class="type_btn">標準唇</button>
+        <button class="type_btn">薄唇</button>
     </div>
     <!--廣告-->
     <div class="ad"><div class="middle_ad"><p>廣告放置區</p></div></div>
     <!--妝容區域-->
-    <div class="main">
-        <img src="img/lip/f1.jpg" />
-        <div class="title">
-            <p>Title:text</p>
-            <p>Title:text</p>
-            <p>Title:text</p>
-            <p>Title:text</p>
+    <div>
+        <!--花瓣-->
+        <div class="one_type" style="display: block;">
+            <div class="main">
+                <img src="img/lip/l1.jpg" />
+                <div class="title">
+                    <p>STEP：</p>
+                    <p>1、上唇邊緣八字遮瑕，讓邊緣往裡凹，可以展現嘴角上揚的感覺。</p>
+                    <p>2、嘴角用深色口紅向斜上揚。</p>
+                    <p>3、想要嘴唇有微笑的感覺，塑造M線筆嘴角上揚更重要。</p>
+                </div>
+            </div>
         </div>
-
+        <!--葉形-->
+        <div class="one_type">
+            <div class="main">
+                <img src="img/lip/l2.jpg" />
+                <div class="title">
+                    <p>STEP：</p>
+                    <p>1、上唇白色U型區域內塗淺色口紅或者塗上有光澤感的唇彩提亮。</p>
+                    <p>2、唇珠兩邊塗上深色口紅，加強唇珠的立體感。</p>
+                    <p>3、下唇唇珠下方塗上深色口紅也是為了襯托唇珠的立體感。</p>
+                </div>
+            </div>
+        </div>
+        <!--M型-->
+        <div class="one_type">
+            <div class="main">
+                <img src="img/lip/l3.jpg" />
+                <div class="title">
+                    <p>STEP：</p>
+                    <p>1、上唇邊緣八字遮瑕，讓邊緣往裡凹，可以展現嘴角上揚的感覺。</p>
+                    <p>2、嘴角用深色口紅向斜上揚。</p>
+                    <p>3、想要嘴唇有微笑的感覺，塑造M線筆嘴角上揚更重要。</p>
+                </div>
+            </div>
+        </div>
+        <!--厚唇-->
+        <div class="one_type">
+            <div class="main">
+                <img src="img/lip/l4.jpg" />
+                <div class="title">
+                    <p>STEP：</p>
+                    <p>1、嘴唇邊緣用遮瑕膏弱化邊緣</p>
+                    <p>2、黃色的明暗交界線盡量內移，將上下唇的重心往內縮。</p>
+                    <p>3、內側用深紅色口紅，外側用淺色口紅。</p>
+                </div>
+            </div>
+        </div>
+        <!--標準唇-->
+        <div class="one_type">
+            <div class="main">
+                <img src="img/lip/l5.jpg" />
+                <div class="title">
+                    <p>修容方法：</p>
+                    <p>1、上下唇的左右都有一條區分唇正/側面的分界線，改變這條線的位置就可以改變正側面的比例。</p>
+                    <p>2、中間白色區域內塗淺色或者亮面口紅，用深色口紅向嘴角過渡。</p>
+                    <p>3、白色區域變窄視覺上收窄唇部。</p>
+                </div>
+            </div>
+        </div>
+        <!--薄唇-->
+        <div class="one_type">
+            <div class="main">
+                <img src="img/lip/l6.jpg" />
+                <div class="title">
+                    <p>STEP：</p>
+                    <p>1、用遮瑕膏把嘴唇唇線蓋住，接著用唇刷沾取口紅勾勒新輪廓。</p>
+                    <p>2、擴大的範圍要適量。</p>
+                    <p>3、最後用口紅田色即可。</p>
+                    <p>4、口紅邊緣暈染開自然減齡，不暈染開精緻高級。</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <!--步驟-->
-    <div class="step">
-        <img src="img/step.png" />
-    </div>
+    
     <!--其他妝容-->
     <div class="other">
         <div class="otherword">
@@ -118,6 +181,7 @@
           <a href="twitter.com"><img src="img/index/twitter.png"></a>
       </div>
       <p class="cc">@2022 Beauty&Best 版權所有</p>
-    </div>
-   
+    </div>  
 </body>
+<script src="js/jquery.mis.js"></script>
+<script src="js/face.js"></script>

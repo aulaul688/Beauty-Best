@@ -5,6 +5,8 @@
     <link href="css/footer.css" rel="stylesheet"/>
     <link href="css/video.css" rel="stylesheet"/>
     <link href="css/facial.css" rel="stylesheet"/>
+    <link href="css/eye.css" rel="stylesheet"/>
+    <script src="js/jquery.mis.js"></script>
     <title>Beauty&Best</title>
 </head>
 <body>
@@ -50,30 +52,238 @@
     <div class="white-header"></div><!--最上方白色空白表頭-->
     <!--影片上類型按鈕-->
     <div class="type">
-        <button>桃花眼</button>
-        <button>丹鳳眼</button>
-        <button>下垂眼</button>
-        <button>柳葉眼</button>
-        <button>杏仁眼</button>
-        <button>瑞鳳眼</button>
+        <button class="type_btn">桃花眼</button>
+        <button class="type_btn">丹鳳眼</button>
+        <button class="type_btn" >柳葉眼</button>
+        <button class="type_btn">下垂眼</button>
+        <button class="type_btn">杏仁眼</button>
+        <button class="type_btn">瑞鳳眼</button>
     </div>
     <!--廣告-->
     <div class="ad"><div class="middle_ad"><p>廣告放置區</p></div></div>
     <!--妝容區域-->
-    <div class="main">
-        <img src="img/eye/f1.jpg" />
-        <div class="title">
-            <p>Title:text</p>
-            <p>Title:text</p>
-            <p>Title:text</p>
-            <p>Title:text</p>
-        </div>
-
+    <div>
+    <!--桃花眼-->
+    <div class="one_type" style="display: block;">
+    <div class="choose">
+        <button class="choose_btn">眼影</button>
+        <button class="choose_btn">眼線</button>
     </div>
     <!--步驟-->
-    <div class="step">
-        <img src="img/step.png" />
+    <div>  
+        <div class="step" style="display: block;">
+            <div><p>眼影</p></div>
+            <div class="eyeshadow">
+                <div class="e1">
+                    <img src="img/eye/1-1.jpg">
+                    <p>1、根據自己眼型來畫，上眼皮遵循由深至淺暈染層次感。</p>
+                    <p>2、C的眼臉下至起始部分在眼球中間向後延伸有弧度的線，下眼尾三角區留白。</p>
+                </div>
+            </div>
+        </div>
+        <div class="step" >
+            <div><p>眼線</p>
+            </div>
+            <div class="eyeline">
+                <p>心機眼線</p>
+                <img src="img/eye/1-2.jpg">
+                <p>平行眼線</p>
+                <img src="img/eye/1-3.jpg">
+            </div>
+        </div>
+    </div>  
     </div>
+    <!--丹鳳眼-->
+    <div class="one_type" >
+        <div class="choose">
+            <button class="choose_btn">眼影</button>
+            <button class="choose_btn">眼線</button>
+        </div>
+        <!--步驟-->
+        <div>  
+            <div class="step" style="display: block;">
+                <div><p>眼影</p></div>
+                <div class="eyeshadow">
+                    <div class="e1">
+                        <img src="img/eye/1-1.jpg">
+                        <p>1、根據自己眼型來畫，上眼皮遵循由深至淺暈染層次感。</p>
+                        <p>2、C的眼臉下至起始部分在眼球中間向後延伸有弧度的線，下眼尾三角區留白。</p>
+                    </div>
+                    <div class="e2"> 
+                        <img src="img/eye/2-2.jpg">
+                        <p>1、下眼尾B用深色眼影畫，中和眼尾上翹。</p>
+                        <p>2、上眼皮靠近內眼角的部分A要比眼尾高，多向上暈染一點。</p>
+                        <p>3、眼尾眼線畫下垂眼線。</p> 
+                        <p>4、上眼皮提亮位置向內眼角移，眼尾的上翹感會減弱一點。</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="step" >
+                <div><p>眼線</p>
+                </div>
+                <div class="eyeline">
+                    <p>心機眼線</p>
+                    <img src="img/eye/1-2.jpg">
+                    <p>下垂眼線</p>
+                    <img src="img/eye/2-3.jpg">
+                </div>
+            </div>
+        </div>  
+    </div>
+    <!--柳葉眼-->
+    <div class="one_type">
+        <div class="choose">
+            <button class="choose_btn">眼影</button>
+            <button class="choose_btn">眼線</button>
+        </div>
+        <!--步驟-->
+        <div>  
+            <div class="step" style="display: block;">
+                <div><p>眼影</p></div>
+                <div class="eyeshadow">
+                    <div class="e1">
+                        <img src="img/eye/1-1.jpg">
+                        <p>1、根據自己眼型來畫，上眼皮遵循由深至淺暈染層次感。</p>
+                        <p>2、C的眼臉下至起始部分在眼球中間向後延伸有弧度的線，下眼尾三角區留白。</p>
+                        <p>3、畫出臥蠶並提亮。</p>
+                    </div>
+                    <div class="e2">
+                        <img src="img/eye/3-2.jpg">
+                        <p>1、適合明媚顏色，眼影要畫得寬/高，中和細長眼型。</p>
+                        <p>2、一定要畫臥蠶，可以讓眼睛顯得圓一點。</p>
+                        <p>3、平頭刷沾取深色眼影畫臥蠶陰影，或是用細眉比畫陰影也合適。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="step" >
+                <div><p>眼線</p>
+                </div>
+                <div class="eyeline">
+                    <p>心機眼線</p>
+                    <img src="img/eye/1-2.jpg">
+                    <p>上揚眼線</p>
+                    <img src="img/eye/3-4.jpg">
+                </div>
+            </div>
+        </div>  
+    </div>
+    <!--下垂眼-->
+    <div class="one_type">
+        <div class="choose">
+            <button class="choose_btn">眼影</button>
+            <button class="choose_btn">眼線</button>
+        </div>
+        <!--步驟-->
+        
+        <div>  
+            <div class="step" style="display: block;">
+                <div><p>眼影</p></div>
+                <div class="eyeshadow">
+                    <div class="e1">
+                        <img src="img/eye/1-1.jpg">
+                        <p>1、根據自己眼型來畫，上眼皮遵循由深至淺暈染層次感。</p>
+                        <p>2、C的眼臉下至起始部分在眼球中間向後延伸有弧度的線，下眼尾三角區留白。</p>
+                        <p>3、畫出臥蠶並提亮。</p>
+                    </div>
+                    <div class="e2">
+                        <img src="img/eye/4-2.jpg">
+                        <p>1、上眼線A1向下延伸一點，視覺讓製造眼頭下垂。</p>
+                        <p>2、下眼線A2前粗後細，平衡眼尾。</p>
+                        <p>3、眼尾眼影上揚，減少下垂感。</p>
+                        <p>4、下眼影和高光盡量靠近眼頭畫，視覺上減少眼尾下垂的注意力。</p>
+                </div>
+            </div>
+
+            
+            </div>  
+            <div class="step">
+            <div><p>眼線</p></div>
+            <div class="eyeline">
+                <p>心機眼線</p>
+                <img src="img/eye/1-2.jpg">
+                <p>狗狗眼線</p>
+                <img src="img/eye/4-4.jpg">
+            </div>
+        </div>
+    </div>
+   
+    </div>
+
+ <!--杏仁眼-->
+    <div class="one_type">
+    <div class="choose">
+        <button class="choose_btn">眼影</button>
+        <button class="choose_btn">眼線</button>
+    </div>
+    <!--步驟-->
+    <div>  
+        <div class="step" style="display: block;">
+            <div><p>眼影</p></div>
+            <div class="eyeshadow">
+                <div class="e1">
+                    <img src="img/eye/1-1.jpg">
+                    <p>1、根據自己眼型來畫，上眼皮遵循由深至淺暈染層次感。</p>
+                    <p>2、C的眼臉下至起始部分在眼球中間向後延伸有弧度的線，下眼尾三角區留白。</p>
+                    <p>3、畫出臥蠶並提亮。</p>
+                </div>
+                <div class="e2">
+                    <img src="img/eye/5-2.jpg">
+                    <p>1、單眼皮/內雙最好選擇消腫收斂的底色系。</p>
+                    <p>2、眼影要有層次漸變感，能凸顯立體感。</p>
+                    <p>3、A淺色、B加深、C提亮</p>
+            </div>
+            </div>
+        </div>
+        <div class="step" >
+            <div><p>眼線</p>
+            </div>
+            <div class="eyeline">
+                <p>心機眼線</p>
+                <img src="img/eye/1-3.jpg">   
+            </div>
+        </div>
+    </div>  
+    </div>
+<!--瑞鳳眼-->
+    <div class="one_type" >
+    <div class="choose">
+        <button class="choose_btn">眼影</button>
+        <button class="choose_btn">眼線</button>
+    </div>
+    <!--步驟-->
+    <div>  
+        <div class="step" style="display: block;">
+            <div><p>眼影</p></div>
+            <div class="eyeshadow">
+                <div class="e1">
+                    <img src="img/eye/1-1.jpg">
+                    <p>1、根據自己眼型來畫，上眼皮遵循由深至淺暈染層次感。</p>
+                    <p>2、C的眼臉下至起始部分在眼球中間向後延伸有弧度的線，下眼尾三角區留白。</p>
+                </div>
+                <div class="e2"> 
+                    <img src="img/eye/2-2.jpg">
+                    <p>1、下眼尾B用深色眼影畫，中和眼尾上翹。</p>
+                    <p>2、上眼皮靠近內眼角的部分A要比眼尾高，多向上暈染一點。</p>
+                    <p>3、眼尾眼線畫下垂眼線。</p> 
+                    <p>4、上眼皮提亮位置向內眼角移，眼尾的上翹感會減弱一點。</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="step" >
+            <div><p>眼線</p>
+            </div>
+            <div class="eyeline">
+                <p>心機眼線</p>
+                <img src="img/eye/1-2.jpg">
+                <p>下垂眼線</p>
+                <img src="img/eye/2-3.jpg">
+            </div>
+        </div>
+    </div>  
+    </div>
+</div>
     <!--其他妝容-->
     <div class="other">
         <div class="otherword">
@@ -121,3 +331,4 @@
     </div>
    
 </body>
+<script src="js/eye.js"></script>

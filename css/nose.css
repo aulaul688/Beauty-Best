@@ -1,0 +1,14 @@
+.main img{
+    width: 20%;
+    left: 5%;
+}
+.type{
+    margin-left: 12%; ;
+}
+.title {
+    width: 100%;
+}
+.title p{
+    font-size: 20px;
+    margin-left: 10%;
+}

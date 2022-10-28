@@ -5,6 +5,8 @@
     <link href="css/footer.css" rel="stylesheet"/>
     <link href="css/video.css" rel="stylesheet"/>
     <link href="css/facial.css" rel="stylesheet"/>
+    <link href="css/nose.css" rel="stylesheet"/>
+    <script src="js/jquery.mis.js"></script>
     <title>Beauty&Best</title>
 </head>
 <body>
@@ -50,51 +52,70 @@
     <div class="white-header"></div><!--最上方白色空白表頭-->
     <!--影片上類型按鈕-->
     <div class="type">
-        <button>標準鼻</button>
-        <button>寬鼻</button>
-        <button>長鼻</button>
-        <button>短鼻</button>
+        <button class="type_btn">長鼻</button>
+        <button class="type_btn">短鼻</button>
+        <button class="type_btn">標準鼻</button>
+        <button class="type_btn">寬鼻</button>
     </div>
     <!--廣告-->
     <div class="ad"><div class="middle_ad"><p>廣告放置區</p></div></div>
     <!--妝容區域-->
-    <div class="main">
-        <img src="img/nose/f1.jpg" />
-        <div class="title">
-            <p>Title:text</p>
-            <p>Title:text</p>
-            <p>Title:text</p>
-            <p>Title:text</p>
+    <div>
+    <!--長鼻-->
+        <div class="one_type" style="display: block;">
+            <div class="main">
+                <img src="img/nose/n1.jpg" />
+                <div class="title">
+                    <p>修容方法：</p>
+                    <p>1、眉心提亮，讓陰影色更明顯。</p>
+                    <p>2、山根高光加寬一點，改善細長感。</p>
+                    <p>3、鼻樑陰影從眉毛下端開始加深眼窩輪廓。</p>
+                    <p>4、鼻頭高光</p>
+                    <p>5、可以縮短中庭比例，增加幼齡感。</p>
+                </div>
+            </div>
+        </div>
+    <!--短鼻-->
+        <div class="one_type" >
+            <div class="main">
+                <img src="img/nose/n2.jpg" />
+                <div class="title">
+                    <p>修容方法：</p>
+                    <p>1、提亮整條山根，加深鼻頭U形陰影。</p>
+                    <p>2、鼻頭高光點下移，要比原本鼻頭稍微低一點。</p>
+                    <p>3、鼻樑陰影連接到眉頭，長度延伸到鼻頭。</p>
+                    <p>4、提亮鼻背，突出鼻樑整條陰影。</p>
+                    <p>5、可以縮短中庭比例。</p>
+                </div>
+            </div>
+        </div>
+    <!--標準鼻-->
+        <div class="one_type" >
+            <div class="main">
+                <img src="img/nose/n3.jpg" />
+                <div class="title">
+                    <p>修容方法：</p>
+                    <p>1、稍微提亮鼻背、法令紋突出鼻子輪廓，輕輕加深鼻頭即可。</p>
+                    <p>2、稍微加深山根陰影感即可。</p>
+                    <p>3、避開駝峰鼻，提亮上下兩側讓兩側視覺上膨起。</p>
+                </div>
+            </div>
+        </div>
+    <!--寬鼻-->
+        <div class="one_type" >
+            <div class="main">
+                <img src="img/nose/n4.jpg" />
+                <div class="title">
+                    <p>修容方法：</p>
+                    <p>1、鼻頭陰影呈M型，鼻頭不須高光。</p>
+                    <p>2、鼻頭陰影朝下打，削弱鼻子朝上感。</p>
+                    <p>3、高光打在鼻頭朝上的位置，轉移對朝天鼻的注意力。</p>
+                </div>
+            </div>
         </div>
 
-    </div>
-    <!--步驟-->
-    <div class="step">
-        <img src="img/step.png" />
-    </div>
-    <!--其他妝容-->
-    <div class="other">
-        <div class="otherword">
-            <h1>其他妝容</h1>
-        </div>
-        <div class="pic">
-            <div>
-                <img src="img/nose/f1.jpg"/>
-                <p>XX妝容</p>
-                <p>妝容效果簡述</p>
-            </div>
-            <div>
-                <img src="img/nose/f1.jpg"/>
-                <p>XX妝容</p>
-                <p>妝容效果簡述</p>
-            </div>
-            <div>
-                <img src="img/nose/f1.jpg"/>
-                <p>XX妝容</p>
-                <p>妝容效果簡述</p>
-            </div>
-        </div>
-    </div>
+</div>
+    
     <!--底部-->
     <div class="footer">
         <div class="left">
@@ -119,3 +140,4 @@
     </div>
    
 </body>
+<script src="js/face.js"></script>

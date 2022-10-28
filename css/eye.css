@@ -1,0 +1,51 @@
+.type{
+    justify-content: center;
+}
+.step{
+    top: 550px;
+}
+.choose{
+    top: 550px;
+}
+
+.step .eyeshadow{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+}
+.step .eyeshadow div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    flex-wrap: wrap;
+    
+}
+
+.step .eyeshadow .e1{
+margin-left: -10%;
+}
+
+.step .eyeshadow .e2{
+    margin-left: 20%;
+    }
+
+.step .eyeshadow img{
+    width: 50%;
+}
+.step div:nth-child(1)>img {
+    width: 50%;
+}
+.step .eyeshadow div:nth-child(1)>p {
+    font-size: 20px;
+}
+
+.step .eyeline{
+    display: flex;
+    flex-direction: row;
+}
+.step .eyeline p{
+    margin-right: 2%; ;
+}
+.eyeline img{
+    width: 30%;
+}
