@@ -15,9 +15,8 @@ $.fn.type=function(){
 $.fn.sub = function(index){
     $(".choose_btn").click(function(){
         //獲得索引號
-        console.log(index);
         var index2=index*2+$(this).index();
-        console.log(index2);
+        
     
         //讓下面相應索引號item顯示 其餘隱藏
         $(".step").eq(index2).show().siblings().hide();

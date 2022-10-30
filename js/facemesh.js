@@ -1,20 +1,20 @@
 const videoElement = document.getElementsByClassName('input_video')[0];
 const canvasElement = document.getElementsByClassName('output_canvas')[0];
 const canvasCtx = canvasElement.getContext('2d');
-const face=document.getElementById('face');
-const leye=document.getElementById('leye');
-const reye=document.getElementById('reye');
-const lip=document.getElementById('lips');
-const nose1=document.getElementById('nose1');
-const nose2=document.getElementById('nose2');
+const face=document.getElementById('fp');
+const leye=document.getElementById('elp');
+const reye=document.getElementById('rlp');
+const lip=document.getElementById('mp');
+const nose1=document.getElementById('np1');
+const nose2=document.getElementById('np2');
 
-const btn2=document.getElementById('btn2');
+const btn=document.getElementById('btn');
 
 function onResults(results) {
   canvasCtx.save();
   canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
   //按下按鈕開始辨識
-  btn2.addEventListener("click",function(){
+  btn.addEventListener("click",function(){
     //當有人臉時開始辨認
     while (results.multiFaceLandmarks) {
       //開始跑每個點

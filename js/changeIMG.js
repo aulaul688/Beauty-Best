@@ -87,6 +87,7 @@ window.addEventListener('load',function(){//全部加載完後再執行
     //左側按鈕
     left.addEventListener('click',function(){
         if(flag){
+            flag=false;
         //假如走到第一張 要跳回最後一張
         if(num==0){
             num=ul.children.length-1;

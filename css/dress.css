@@ -15,7 +15,7 @@ ul{margin: 0;padding: 0;}
     top: 500px;
 }
 .type>p{
-    margin: 20px auto;
+    margin: 5% auto;
     text-align: center;
     font-size: 70px;
     font-weight: 900;
@@ -32,10 +32,10 @@ ul{margin: 0;padding: 0;}
     justify-content: center;
 }
 .type_item{
-    background-color: aquamarine;
+    font-size: 2vw;
     height:15%;
     width: 70%;
-    margin: 2% auto;
+    margin: 0.5% auto;
     border: 5px black;
     
 }
@@ -127,10 +127,10 @@ ul{margin: 0;padding: 0;}
 
 
 .focus{
-    width: 1525px;
+    width: 1528px;
     height: 500px;
     position: relative;
-    top: 500px;
+    top: 400px;
     overflow: hidden;
 }
 
