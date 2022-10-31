@@ -12,6 +12,28 @@ ul{margin: 0;padding: 0;}
     height: 100px;
     width: 100%;
 }
+.fit{
+    width: 100%;
+    position: relative; 
+}
+.fit div{
+    position: relative;
+}
+.fit img{
+    width: 100%;
+}
+.fit p{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    right: 5%;
+    font-size: 2vw;
+}
+
+.fit h1{
+    font-size: 3vw;
+    margin:0 43%;
+}
 
 .main{
     display: flex;
@@ -21,7 +43,7 @@ ul{margin: 0;padding: 0;}
     background-color: #282626;
     color: white;
     position: relative;
-    top: 30px;
+    top: 0px;
     font-size: 35px;
 }
 .main .left{
@@ -72,17 +94,20 @@ ul{margin: 0;padding: 0;}
     display: none;
 }
 .other{
+    position: relative;
     width: 100%;
-    height: 500px;
+    height: 400px;
     top: 100px;
     background-color: white;
-    position: relative;
 }
 .otherword{
     display: flex;
-    justify-content: center;
-    font-size: 30px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2vw;
+    
 }
+
 .pic div{
     width: 25%;
     float: left;
@@ -91,17 +116,17 @@ ul{margin: 0;padding: 0;}
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #EDEBEB;
+    background-color: #E7E6E6;
 }
 
 .pic img{
-    width: 50%;
-    margin-left: 25%;
+    width: 100%;
+    height: 100%;
 }
 .pic div:hover{
     box-shadow: 10px 5px 5px 5px gray;
 }
 
 .footer{
-    top: 100px;
+    top: 200px;
 }
