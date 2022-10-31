@@ -2,14 +2,20 @@ const videoElement = document.getElementsByClassName('input_video')[0];
 const canvasElement = document.getElementsByClassName('output_canvas')[0];
 const canvasCtx = canvasElement.getContext('2d');
 const face=document.getElementById('fp');
-const leye=document.getElementById('elp');
-const reye=document.getElementById('rlp');
+const leye=document.getElementById('lep');
+const reye=document.getElementById('rep');
 const lip=document.getElementById('mp');
 const nose1=document.getElementById('np1');
 const nose2=document.getElementById('np2');
 
-const btn=document.getElementById('btn');
+const fimg=document.getElementById('fimg');
+const leimg=document.getElementById('leimg');
+const reimg=document.getElementById('reimg');
+const nimg1=document.getElementById('nimg1');
+const nimg2=document.getElementById('nimg2');
+const mimg=document.getElementById('mimg');
 
+const btn=document.getElementById('btn');
 function onResults(results) {
   canvasCtx.save();
   canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
@@ -38,22 +44,29 @@ function onResults(results) {
         
         if(orange==blue&&blue==green){
           face.innerHTML='方臉';
+          fimg.src="./img/facemesh/f1.png";
         }else if(blue>orange&&blue>purple){
           if((green<blue+20)&&(green>blue-20)){
             face.innerHTML='圓臉';
+            fimg.src="./img/facemesh/f2.png";
           }else if(green*3==(blue*4+30)){
             face.innerHTML='鵝蛋臉';
+            fimg.src="./img/facemesh/f3.png";
           }else{
             face.innerHTML='菱形臉';
+            fimg.src="./img/facemesh/f4.png";
           }
         }else if(orange>blue&&blue>purple){
           if(green>blue){
             face.innerHTML='瓜子臉';
+            fimg.src="./img/facemesh/f5.png";
           }else if((green<blue+20)&&(green>blue-20)){
             face.innerHTML='心型臉';
+            fimg.src="./img/facemesh/f6.png";
           }
         }else if(purple>blue&&blue>orange){
           face.innerHTML='梨型臉';
+          fimg.src="./img/facemesh/f7.png";
         }
         
       //眼
@@ -106,15 +119,19 @@ function onResults(results) {
           if(y359<y463){//A
             if((x359-x463)<((y253-y257)*2)){//B
               reye.innerHTML='右桃花眼';
+              reimg.src="./img/facemesh/e1.png";
             }else{//A
               reye.innerHTML='右丹鳳眼';
+              reimg.src="./img/facemesh/e2.png";
             }
           }else{//B
             if(y359<y463){//A
               if((x359-x463)<((y253-y257)*2)){//B
                 reye.innerHTML='右下垂眼';
+                reimg.src="./img/facemesh/e3.png";
               }else{//A
                 reye.innerHTML='右柳葉眼';
+                reimg.src="./img/facemesh/e4.png";
               }
             }
           }
@@ -122,15 +139,19 @@ function onResults(results) {
           if(y359<y463){//A
             if((x359-x463)<((y253-y257)*2)){//B
               reye.innerHTML='右瑞鳳眼';
+              reimg.src="./img/facemesh/e5.png";
             }else{//A
               reye.innerHTML='右杏仁眼';
+              reimg.src="./img/facemesh/e6.png";
             }
           }else{//B
             if(y359<y463){//A
               if((x359-x463)<((y253-y257)*2)){//B
                 reye.innerHTML='右杏仁眼';
+                reimg.src="./img/facemesh/e6.png";
               }else{//A
                 reye.innerHTML='右下垂眼';
+                reimg.src="./img/facemesh/e3.png";
               }
             }
           }
@@ -141,15 +162,19 @@ function onResults(results) {
           if(y130<y243){//A
             if((x130-x243)<(y23-y27)*2){//B
               leye.innerHTML='左桃花眼';
+              leimg.src="./img/facemesh/e1.png";
             }else{//A
               leye.innerHTML='左丹鳳眼';
+              leimg.src="./img/facemesh/e2.png";
             }
           }else{//B
             if(y130<y243){//A
               if((x130-x243)<(y23-y27)*2){//B
                 leye.innerHTML='左下垂眼';
+                leimg.src="./img/facemesh/e3.png";
               }else{//A
                 leye.innerHTML='左柳葉眼';
+                leimg.src="./img/facemesh/e4.png";
               }
             }
           }
@@ -157,16 +182,20 @@ function onResults(results) {
           if(y130<y243){//A
             if((x359-x463)<(y23-y27)*2){//B
               leye.innerHTML='左瑞鳳眼';
+              leimg.src="./img/facemesh/e5.png";
             }else{//A
               leye.innerHTML='左杏仁眼';
+              leimg.src="./img/facemesh/e6.png";
             }
           }else{//B
             if(y130<y243){//A
               if((x130-x243)<(y23-y27)*2){//B
                 leye.innerHTML='左杏仁眼';
+                leimg.src="./img/facemesh/e6.png";
                 console.log('');
               }else{//A
                 leye.innerHTML='左下垂眼';
+                leimg.src="./img/facemesh/e3.png";
               }
             }
           }
@@ -203,24 +232,31 @@ function onResults(results) {
           if(liph>lipHH){//A
             if(liphip>105){
               lip.innerHTML='花瓣唇';
+              mimg.src="./img/facemesh/m1.jpg";
             }else{
               lip.innerHTML='葉形唇';
+              mimg.src="./img/facemesh/m2.jpg";
             }
           }else{//B
               if(liphip>105){
                 lip.innerHTML='M型唇';
+                mimg.src="./img/facemesh/m3.jpg";
               }else{
                 lip.innerHTML='葉形唇';
+                mimg.src="./img/facemesh/m2.jpg";
               }
           }
         }else{//B
           if(liph>lipHH){//A
             lip.innerHTML='厚唇';
+            mimg.src="./img/facemesh/m4.jpg";
           }else{//B
               if(liphip>105){
                 lip.innerHTML='標準唇';
+                mimg.src="./img/facemesh/m5.jpg";
               }else{
                 lip.innerHTML='薄唇';
+                mimg.src="./img/facemesh/m6.jpg";
               }
           }
         }
@@ -234,8 +270,10 @@ function onResults(results) {
         const nosew=x278-x48;
         if(nosew<noseW+2){
           nose1.innerHTML='正常鼻';
+          nimg1.src="./img/facemesh/n1.jpg";
         }else{
           nose1.innerHTML='寬鼻';
+          nimg1.src="./img/facemesh/n2.jpg";
         }
         //長短
         const noseH=green/3;//標準長
@@ -244,8 +282,10 @@ function onResults(results) {
         const noseh=y94-y6;
         if(noseh>noseH){
           nose2.innerHTML='長鼻';
+          nimg2.src="./img/facemesh/n3.jpg";
         }else{
           nose2.innerHTML='短鼻';
+          nimg2.src="./img/facemesh/n4.jpg";
         }
 
         break;

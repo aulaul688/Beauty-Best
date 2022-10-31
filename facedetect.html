@@ -2,10 +2,6 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <script src="js/camera.js"></script>
-  <script src="js/control.js" ></script>
-  <script src="js/drawing.js" ></script>
-  <script src="js/face_mesh.js"></script>
   <link rel="stylesheet" href="css/navbar.css">
   <link href="css/footer.css" rel="stylesheet"/>
   <link rel="stylesheet" href="css/facemash.css">
@@ -32,7 +28,7 @@
             <ul class="subnav">
                 <li><a class="nava" href="s.html">沙漏型</a></li>
                 <li><a class="nava" href="h.html">直筒形</a></li>
-                <li><a class="nava" href="x.html">倒三角形</a></li>
+                <li><a class="nava" href="y.html">倒三角形</a></li>
                 <li><a class="nava" href="a.html">梨型</a></li>
                 <li><a class="nava" href="o.html">蘋果型</a></li>
             </ul>
@@ -51,35 +47,41 @@
   <div class="photo" >
     <video class="input_video"></video>
     <canvas class="output_canvas" width="1280px" height="720px"></canvas>
-    <button class="btn">START</button>  
+    <button class="btn" id="btn">START</button>  
   </div>
-  <div>
-    <img class="ad" src="img/facemesh/ad.png">
+  <div class="ad">
+    <img src="img/facemesh/ad.png">
+    <p>1、請將您的正臉完整露出面對鏡頭
+      <br>2、請保持在畫面中間並盡可能靠近鏡頭
+      <br>3、請保持畫面中只有一張人臉
+      <br>4、做好準備後請保持靜止不動並按下START按鈕，結果將顯示在下方Resualt區
+      <br>5、如顯示結果不完全請重新辨識
+    </p>
   </div>
   <div class="result">
     <div class="result_item"> 
-      <img class="fimg" src="img/logo.jpg"/>
-      <p class="fp">菱形臉</p>
+      <img id="fimg" src="img/logo.png"/>
+      <p id="fp"></p>
     </div>
     <div class="result_item"> 
-      <img class="elimg" src="img/logo.jpg"/>
-      <p class="elp">左桃花眼</p>
+      <img id="leimg" src="img/logo.png"/>
+      <p id="lep"></p>
     </div>
     <div class="result_item"> 
-      <img class="erimg" src="img/logo.jpg"/>
-      <p class="erp">右桃花眼</p>
+      <img id="reimg" src="img/logo.png"/>
+      <p id="rep"></p>
     </div>
     <div class="result_item"> 
-      <img class="nimg1" src="img/logo.jpg"/>
-      <p class="np1">寬鼻</p>
+      <img id="nimg1" src="img/logo.png"/>
+      <p id="np1"></p>
     </div>
     <div class="result_item"> 
-      <img class="nimg2" src="img/logo.jpg"/>
-      <p class="np2">長鼻</p>
+      <img id="nimg2" src="img/logo.png"/>
+      <p id="np2"></p>
     </div>
     <div class="result_item"> 
-      <img class="mimg" src="img/logo.jpg"/>
-      <p class="mp">標準唇</p>
+      <img id="mimg" src="img/logo.png"/>
+      <p id="mp"></p>
     </div>
   </div>
   <div class="footer">
@@ -105,6 +107,11 @@
 </div>
 
 
-  </body>
-</html>
+</body>
+  <script src="js/camera.js"></script>
+  <script src="js/control.js" ></script>
+  <script src="js/drawing.js" ></script>
+  <script src="js/face_mesh.js"></script>
 <script src="js/facemesh.js"></script>
+
+</html>
