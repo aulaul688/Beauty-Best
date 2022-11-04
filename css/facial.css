@@ -160,6 +160,7 @@ ul{margin: 0;padding: 0;}
 
 .pic img{
     width: 50%;
+    height: 90%;
     margin-left: 25%;
 }
 .pic div:hover{

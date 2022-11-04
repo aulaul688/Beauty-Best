@@ -12,3 +12,12 @@
     font-size: 20px;
     margin-left: 10%;
 }
+.main{
+    top: 500px;
+}
+.other{
+    top:550px;
+}
+.footer{
+    top: 600px;
+}

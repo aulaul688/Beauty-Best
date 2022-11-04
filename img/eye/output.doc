@@ -1,0 +1,361 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	Untitled Page
+</title>
+    <style type="text/css">
+        .style1
+        {
+            width: 15%;
+            height: 42px;
+        }
+        .style2
+        {
+            width: 85%;
+            height: 42px;
+            padding-left:2px;
+        }
+        
+        .mainTable table, .mainTable th, .mainTable td
+        {
+            border: 2px solid #000000;            
+        }
+        
+        table.subTable, .subTable th, .subTable td
+        {
+            border: 1px solid #808080;
+        }
+        
+        table.checkTable, .checkTable th, .checkTable td
+        {
+            border: 2px solid #808080;
+        }
+    </style>
+    <style type="text/css">
+        @page WordSection1
+        {
+            margin:1.5cm 2.0cm 2.0cm 2.0cm;
+        }
+        div.WordSection1
+        {
+            page:WordSection1;
+        }        
+    </style>
+</head>
+<body>
+    <div class="WordSection1">
+    <form name="form1" method="post" action="./StudActivityLoginPrint.aspx" id="form1">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="" />
+</div>
+    
+    <table style="width: 100%;font-size:10pt; border-collapse: collapse;" class="mainTable">
+        <tr>
+            <td style="width: 100%" colspan="8" align="center">
+                國立雲林科技大學學生社團活動申請表<span id="form_id_Label1">0000000001781397</span>-<span id="activity_kind_name_Label">自辦活動</span>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 15%">
+                活動名稱
+            </td>
+            <td style="width: 85%" colspan="7">
+                <span id="activity_name_Label">第十三屆國管學程管理學成果展【天下乙絕的瘋狂茶會】</span>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 15%">
+                申請社團
+            </td>
+            <td style="width: 85%" colspan="7">
+                <span id="app_activity_group_name_Label">國際管理學士學位學程學會</span>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 15%">
+                主辦單位
+            </td>
+            <td style="width: 35%" colspan="3">
+                <span id="master_activity_Label">國際管理學士學位學程學會</span>
+            </td>
+            <td style="width: 10%">
+                申請學生
+            </td>
+            <td style="width: 15%">
+                <span id="app_stud_no_Label">B11128016</span><br /><span id="app_stud_name_Label">劉紆伶</span>
+            </td>            
+            <td style="width: 10%">
+                行動電話
+            </td>
+            <td style="width: 15%">
+                <span id="mobile_no_Label">0963338870</span>
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 15%">
+                日期時間
+            </td>
+            <td style="width: 35%" colspan="3">
+                <span id="start_date_Label">111/12/15</span>-<span id="start_time_Label">07:00</span><br />
+                <span id="end_date_Label">111/12/15</span>-<span id="end_time_Label">19:00</span>
+            </td>
+            <td style="width: 10%">
+                活動地點
+            </td>
+            <td style="width: 40%" colspan="3">
+                <span id="activity_place_Label">雲科大活動中心表演廳及一樓中庭</span>
+            </td>
+        </tr>
+        <tr>            
+            <td style="width: 15%">
+                參加對象
+            </td>
+            <td style="width: 10%">
+                &nbsp;
+            </td>            
+            <td style="width: 15%">
+                預計參加人數
+            </td>
+            <td style="width: 10%">
+                &nbsp;
+            </td>
+            <td style="width: 10%">
+                校內人數
+            </td>
+            <td style="width: 15%">
+                &nbsp;
+            </td>            
+            <td style="width: 10%">
+                校外人數
+            </td>
+            <td style="width: 15%">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 15%">
+                活動內容簡述（演講活動請填寫主講人簡歷）
+            </td>
+            <td style="width: 85%" colspan="7">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 15%">
+                請求事項
+            </td>
+            <td style="width: 85%; padding-left:2px;" colspan="7">
+                □校車申請（用車時間：　　　　　　上車地點：　　　　　　）<br />                
+                □公文申請（請擬函稿）<br />
+                □場地申請<br />
+                (非學生活動中心之校內場地申請，請於活動一個月前提出申請並於晚間10點前撤場完成)<br />
+                □其他
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 15%">
+                經費預算
+            </td>
+            <td style="width: 85%" colspan="7">
+                <table style="width: 100%; font-size:10pt; border-collapse: collapse;" class="subTable">
+                    <tr>
+                        <td style="width: 70%" colspan="4">
+                            一、支出部分
+                        </td>
+                        <td style="width: 35%" colspan="2">
+                            一、收入部份
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%" align="center">項目
+                        </td>
+                        <td style="width: 15%" align="center">金額
+                        </td>
+                        <td style="width: 20%" align="center">項目
+                        </td>
+                        <td style="width: 15%" align="center">金額
+                        </td>
+                        <td style="width: 20%" align="center">項目
+                        </td>
+                        <td style="width: 10%" align="center">金額
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%">&nbsp;
+                        </td>
+                        <td style="width: 15%">&nbsp;
+                        </td>
+                        <td style="width: 20%">&nbsp;
+                        </td>
+                        <td style="width: 15%">&nbsp;
+                        </td>
+                        <td style="width: 20%">&nbsp;
+                        </td>
+                        <td style="width: 10%">&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%">&nbsp;
+                        </td>
+                        <td style="width: 15%">&nbsp;
+                        </td>
+                        <td style="width: 20%">&nbsp;
+                        </td>
+                        <td style="width: 15%">&nbsp;
+                        </td>
+                        <td style="width: 20%">&nbsp;
+                        </td>
+                        <td style="width: 10%">&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%">&nbsp;
+                        </td>
+                        <td style="width: 15%">&nbsp;
+                        </td>
+                        <td style="width: 20%">&nbsp;
+                        </td>
+                        <td style="width: 15%">&nbsp;
+                        </td>
+                        <td style="width: 20%">合計
+                        </td>
+                        <td style="width: 10%">&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%">&nbsp;
+                        </td>
+                        <td style="width: 15%">&nbsp;
+                        </td>
+                        <td style="width: 20%">&nbsp;
+                        </td>
+                        <td style="width: 15%">&nbsp;
+                        </td>
+                        <td style="width: 30%" colspan="2" rowspan="3">
+                            請求補助：<br />
+                            學生會：<font style="text-decoration: underline;">　　  </font>元<br />
+                            學校：<font style="text-decoration: underline;">　　  </font>元
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%">&nbsp;
+                        </td>
+                        <td style="width: 15%">&nbsp;
+                        </td>
+                        <td style="width: 20%">&nbsp;
+                        </td>
+                        <td style="width: 15%">&nbsp;
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="width: 20%">&nbsp;
+                        </td>
+                        <td style="width: 15%">&nbsp;
+                        </td>
+                        <td style="width: 20%">合計
+                        </td>
+                        <td style="width: 15%">&nbsp;
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                備註
+            </td>
+            <td colspan="7" class="style2">
+                1. 請附詳細計畫書，另請於期限內繳交簽屬完成的定型化契約、投保文件等文件。<br />
+                2. 請於活動辦理一週前完成器材場地預借；請於活動辦理結束二週內完成經費核銷，單筆超過一萬元之核銷請至少於核銷前一週提供估價單先行請購。<br />
+                3. 活動內容設計請尊重性別差異，遵守教育部「性別平等教育法」規範，勿涉及性侵害、性騷擾及性霸凌。
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%; text-align: center;" colspan="2">
+                社團負責人簽章
+            </td>
+            <td style="width: 25%; text-align: center;" colspan="2">
+                會辦單位
+            </td>
+            <td style="width: 25%; text-align: center;" colspan="2">
+                課指組承辦人
+            </td>
+            <td style="width: 25%; text-align: center;" colspan="2">
+                課指組組長
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%; height: 50px;" colspan="2">
+                &nbsp;
+            </td>
+            <td style="width: 25%; line-height:20px; padding-left:2px;" colspan="2">
+                □主計室<br />
+                (會計編號：　　　　　　)<br />
+                □軍訓組<br />
+                □其他
+            </td>
+            <td style="width: 25%; height: 50px;" colspan="2" rowspan="5">
+                &nbsp;
+            </td>
+            <td style="width: 25%; height: 50px;" colspan="2">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td style="width: 25%; text-align: center;" colspan="2">指導老師意見簽章</td>
+            <td style="width: 25%; text-align: center;" colspan="2">需檢附文件</td>
+            <td style="width: 25%; text-align: center;" colspan="2">學務長</td>
+        </tr>
+        <tr>
+            <td style="width: 25%; height: 70px;" colspan="2">&nbsp;</td>
+            <td style="width: 25%; line-height:20px; padding-left:2px;" colspan="2" rowspan="3">
+                □定型化契約(校內)<br />
+                □定型化契約(校外)<br />
+                □參加人員投保文件及保單收據<br />
+                □請於＿＿＿＿＿＿完成活動確認單<br />
+                □其他
+            </td>
+            <td style="width: 25%; height: 70px;" colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 25%; text-align: center;" colspan="2">領隊老師(校外活動)</td>
+            <td style="width: 25%; text-align: center;" colspan="2">校長</td>
+        </tr>
+        <tr>
+            <td style="width: 25%; height: 70px;" colspan="2">&nbsp;</td>
+            <td style="width: 25%; height: 70px;" colspan="2">&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width:50%; vertical-align:middle; border-right: none;" colspan="4">
+                <span id="PrintTimeLabel">2022/11/3 下午 04:46:18</span>
+            </td>
+            <td style="vertical-align:top; text-align: right; border-left: none;" colspan="4">                
+                <table style="width: 100%; font-size:8pt; border-collapse: collapse;" class="checkTable">
+                    <tr style="text-align: center;">
+                        <td>收件日期</td>
+                        <td>社團留存</td>
+                        <td>一週大事</td>
+                        <td>線上核對</td>
+                        <td>申請紀錄</td>
+                    </tr>
+                    <tr style="height: 20px;">
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table> 
+    
+<div>
+
+	<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
+</div></form>
+    </div>
+</body>
+</html>
