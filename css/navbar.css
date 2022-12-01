@@ -31,6 +31,7 @@ ul{margin: 0;padding: 0;}
     color: black;
     font-weight: 900;
     -webkit-text-stroke: 0.2px white;
+    font-family: "Stencil Std, fantasy";
 }
 .navBar{
     display: flex;

@@ -19,8 +19,10 @@ const btn=document.getElementById('btn');
 function onResults(results) {
   canvasCtx.save();
   canvasCtx.clearRect(0, 0, canvasElement.width, canvasElement.height);
+  
   //按下按鈕開始辨識
   btn.addEventListener("click",function(){
+    
     //當有人臉時開始辨認
     while (results.multiFaceLandmarks) {
       //開始跑每個點
@@ -67,6 +69,8 @@ function onResults(results) {
         }else if(purple>blue&&blue>orange){
           face.innerHTML='梨型臉';
           fimg.src="./img/facemesh/f7.png";
+        }else{
+          alert('請保持不動從新辨識');
         }
         
       //眼
@@ -287,13 +291,14 @@ function onResults(results) {
           nose2.innerHTML='短鼻';
           nimg2.src="./img/facemesh/n4.jpg";
         }
-
+        
         break;
         
       }
      break; 
     }
     return;//跳出迴圈
+  
   });
 }
 

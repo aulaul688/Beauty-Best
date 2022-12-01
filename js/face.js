@@ -11,7 +11,6 @@ $.fn.type=function(){
     $(".other").css("top","250px");
     $(".footer").css("top","250px")
     $.fn.sub(index);
-    $.fn.step(index);
 })
 }
 
@@ -26,15 +25,15 @@ $.fn.sub = function(index){
         $(".step").eq(index2).show().siblings().hide();
     })
 }
+
 $.fn.step = function(index){
     $(".pic_btn").click(function(){
         //獲得索引號
         console.log(index);
-        var index2=index*3+$(this).index();
-        console.log(index2);
-    
+        var index=index+$(this).index();
+        console.log(index);
         //讓下面相應索引號item顯示 其餘隱藏
-        $(".step2").eq(index2).show().siblings().hide();
+        $(".step2").eq(index).show().siblings().hide();
         $(".other").css("top","500px");
         $(".footer").css("top","500px");
     })

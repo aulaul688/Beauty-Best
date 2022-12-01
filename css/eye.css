@@ -36,9 +36,13 @@ margin-left: -10%;
     width: 50%;
 }
 .step .eyeshadow div:nth-child(1)>p {
+    margin-top: 2px;
     font-size: 20px;
 }
-
+.step .eyeshadow div:nth-child(2)>p {
+    margin-top: 2px;
+    font-size: 20px;
+}
 .step .eyeline{
     display: flex;
     flex-direction: row;
