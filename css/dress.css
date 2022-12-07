@@ -111,19 +111,25 @@ ul{margin: 0;padding: 0;}
     flex-direction: column;
     margin-left: 200px;
 }
+.right a{
+    text-decoration: none;
+}
+.right a:visited{
+    color: black;
+}
 
 .artical{
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
-    height: 100px;
+    margin-top: 20px;
+    height: 150px;
     box-shadow: 2px 2px 2px 2px gray;
     border-radius: 5px;
     justify-content: center;
     align-items: center;
 }
 .artical:hover{
-    height: 150px;
+    height: 200px;
 }
 
 .artical .text{
