@@ -69,8 +69,6 @@ function onResults(results) {
         }else if(purple>blue&&blue>orange){
           face.innerHTML='梨型臉';
           fimg.src="./img/facemesh/f7.png";
-        }else{
-          alert('請保持不動從新辨識');
         }
         
       //眼
